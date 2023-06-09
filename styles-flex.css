@@ -1,0 +1,27 @@
+header{
+    background-color: lightgreen;
+}
+.container{
+    background-color: lightgray;
+    display: flex; /*para utilizar o flexbox*/
+    flex-flow: row; /* do tipo linha pra quando reduzrir a tela do navegador passar de uma linha para a outra*/
+    flex-wrap: wrap; /* para os elementos se deslocarem quando diminuir a largura do browser*/
+}
+.box-noticia{
+    width: 20%; /* largura definida para o layout flex*/
+    min-width: 300px; /* largura minima, para quando reduzir a tela até essa largura, os elementos se deslocarem para a próxima linha*/
+    padding: 20px;
+}
+.noticia-destaque{
+    flex-grow: 2; /*para se destacar, ela vai crescero dobro das demais noticias*/
+}
+/*para organizar*/
+.not4{
+    order: 1;
+}
+.not1, .not3, .not5{
+    order: 2;
+}
+.not2{
+    order: 3;
+}
